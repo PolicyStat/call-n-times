@@ -1,7 +1,7 @@
 {
   "name": "call-n-times",
   "version": "1.0.0",
-  "description": "A JavaScript module that calls a provided function n times",
+  "description": "Calls a provided function n times, synchronously",
   "main": "index.js",
   "scripts": {
     "test": "karma start --single-run --browsers Chrome"
@@ -11,8 +11,9 @@
     "url": "https://github.com/mightyiam/n-calls.git"
   },
   "keywords": [
-    "loop",
-    "repeat"
+    "call",
+    "repeat",
+    "sync"
   ],
   "author": "Shahar Or",
   "license": "MIT",
