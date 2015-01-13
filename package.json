@@ -1,5 +1,5 @@
 {
-  "name": "n-calls",
+  "name": "call-n-times",
   "version": "1.0.0",
   "description": "A JavaScript module that calls a provided function n times",
   "main": "index.js",
