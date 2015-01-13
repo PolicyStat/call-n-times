@@ -1,0 +1,35 @@
+{
+  "name": "n-calls",
+  "version": "1.0.0",
+  "description": "A JavaScript module that calls a provided function n times",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mightyiam/n-calls.git"
+  },
+  "keywords": [
+    "loop",
+    "repeat"
+  ],
+  "author": "Shahar Or",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mightyiam/n-calls/issues"
+  },
+  "homepage": "https://github.com/mightyiam/n-calls",
+  "devDependencies": {
+    "jasmine": "^2.1.1",
+    "jasmine-core": "^2.1.3",
+    "karma": "^0.12.31",
+    "karma-browserify": "^2.0.0",
+    "karma-chrome-launcher": "^0.1.7",
+    "karma-jasmine": "^0.3.4",
+    "validate.io-integer": "^1.0.2"
+  },
+  "dependencies": {
+    "is-integer": "^1.0.3"
+  }
+}
