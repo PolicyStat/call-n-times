@@ -4,7 +4,7 @@
   "description": "Calls a provided function n times, synchronously",
   "main": "index.js",
   "scripts": {
-    "test": "karma start --single-run --browsers Chrome"
+    "test": "jasmine"
   },
   "repository": {
     "type": "git",
@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/mightyiam/n-calls",
   "devDependencies": {
-    "jasmine": "^2.1.1",
+    "jasmine": "^2.2.0",
     "jasmine-core": "^2.1.3",
     "karma": "^0.12.31",
     "karma-browserify": "^2.0.0",
