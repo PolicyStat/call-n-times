@@ -4,8 +4,8 @@
 
 var isInteger = require('validate.io-integer')
 
-module.exports = function (func, n) {
-  if (arguments.length !== 2) {
+module.exports = function (func, n, cb) {
+  if (arguments.length < 2) {
     throw 'Expected exactly 2 arguments'
   }
   if (typeof func !== 'function') {
@@ -29,6 +29,8 @@ module.exports = function (func, n) {
     returns.push(returnVal)
     n--
   }
+
+  if (typeof cb === 'function') cb()
 
   return returns
 }
