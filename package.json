@@ -4,7 +4,7 @@
   "description": "Calls a provided function n times, synchronously",
   "main": "index.js",
   "scripts": {
-    "test": "jasmine"
+    "test": "standard && jasmine"
   },
   "repository": {
     "type": "git",
@@ -27,7 +27,8 @@
     "karma": "^0.12.31",
     "karma-browserify": "^2.0.0",
     "karma-chrome-launcher": "^0.1.7",
-    "karma-jasmine": "^0.3.4"
+    "karma-jasmine": "^0.3.4",
+    "standard": "^2.4.1"
   },
   "dependencies": {
     "validate.io-integer": "^1.0.2"
