@@ -32,24 +32,24 @@ describe('argument validation', function() {
   })
 })
 
-describe('calling n times', function() {
+describe('the calls', function() {
   var spy = jasmine.createSpy('spy')
 
   afterEach(function() {
     spy.calls.reset()
   })
 
-  it('can call 0 times', function() {
+  it('can get called 0 times', function() {
     call(spy, 0)
     expect(spy).not.toHaveBeenCalled()
   })
 
-  it('can call 1 time', function() {
+  it('can called 1 time', function() {
     call(spy, 1)
     expect(spy.calls.count()).toEqual(1)
   })
 
-  it('can call 2 and more times', function() {
+  it('can get called 2 and more times', function() {
     for (var n = 5; n !== 0; n--) {
       call(spy, n)
       expect(spy.calls.count()).toEqual(n)
@@ -58,8 +58,8 @@ describe('calling n times', function() {
   })
 })
 
-describe('returns return values', function() {
-  it('returns return values in order', function() {
+describe('the return value', function() {
+  it('is in order', function() {
     var n = 100
     var i = 0
     var returns = call(
@@ -74,5 +74,19 @@ describe('returns return values', function() {
     for (i = 0; i < n; i++) {
       expect(returns[i]).toEqual(i.toString())
     }
+  })
+})
+
+describe('the callback function', function() {
+  it('is called after all calls', function() {
+    var cbCalled = false
+    var callback = function() {
+      cbCalled = true
+    }
+    var func = function() {
+      cbCalled = false
+    }
+    call(func, 2, callback)
+    expect(cbCalled).toEqual(true)
   })
 })
