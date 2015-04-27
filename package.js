@@ -7,7 +7,19 @@ pkg.version = '1.1.0'
 pkg.description = 'Calls a provided function n times, synchronously'
 pkg.main = 'index.js'
 pkg.scripts = {
-  test: 'standard && jasmine'
+  lint: 'standard',
+  unit: 'jasmine',
+  'generate-license': [
+    'license-generator',
+    'install ' + ps.openSource.license.spdx.toLowerCase(),
+    '--year ' + new Date().getFullYear(),
+    '--fullname ' + ps.name.pretty,
+    '--project ' + pkg.name
+  ].join(' '),
+  test: [
+    'npm run lint',
+    'npm run unit'
+  ].join(' && ')
 }
 pkg.githubRepo('policystat/call-n-times')
 pkg.keywords = [
@@ -22,6 +34,7 @@ pkg.devDependencies = {
   mightyiam: '^1.1.6',
   standard: '*',
   'auto-package': '^1.0.0',
+  'license-generator': '^2.1.0',
   policystat: '^1.3.0'
 }
 pkg.dependencies = {
