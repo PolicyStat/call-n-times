@@ -34,7 +34,7 @@ pkg.devDependencies = {
   mightyiam: '^1.1.6',
   standard: '*',
   'auto-package': '^1.0.0',
-  'license-generator': '^2.1.0',
+  'license-generator': '^0.0.13',
   policystat: '^1.3.0'
 }
 pkg.dependencies = {
