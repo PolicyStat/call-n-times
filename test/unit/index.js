@@ -77,14 +77,3 @@ describe('the return value', function () {
     }
   })
 })
-
-describe('the callback function', function () {
-  it('is called after all calls', function () {
-    var cb = sinon.spy()
-    var func = function () {
-      cb.should.not.have.been.called
-    }
-    call(func, 2, cb)
-    cb.should.have.been.calledOnce
-  })
-})

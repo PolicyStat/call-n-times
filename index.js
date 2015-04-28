@@ -30,7 +30,5 @@ module.exports = function (func, n, cb) {
     n--
   }
 
-  if (typeof cb === 'function') cb()
-
   return returns
 }
