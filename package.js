@@ -22,7 +22,7 @@ pkg.scripts = {
     'npm run unit'
   ].join(' && ')
 }
-pkg.githubRepo('policystat/call-n-times')
+pkg.githubRepo('PolicyStat/call-n-times')
 pkg.keywords = [
   'call',
   'repeat',
@@ -31,6 +31,7 @@ pkg.keywords = [
 pkg.author = mightyiam.authorString
 pkg.license = ps.openSource.license.spdx
 pkg.devDependencies = {
+  'verb-cli': '^0.6.2',
   mocha: '^2.2.4',
   chai: '^2.3.0',
   sinon: '^1.14.1',
