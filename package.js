@@ -8,7 +8,7 @@ pkg.description = 'Calls a provided function n times, synchronously'
 pkg.main = 'index.js'
 pkg.scripts = {
   lint: 'standard',
-  unit: 'jasmine',
+  unit: 'mocha test/unit',
   'generate-license': [
     'license-generator',
     'install ' + ps.openSource.license.spdx.toLowerCase(),
@@ -30,7 +30,10 @@ pkg.keywords = [
 pkg.author = mightyiam.authorString
 pkg.license = ps.openSource.license.spdx
 pkg.devDependencies = {
-  jasmine: '^2.2.0',
+  mocha: '^2.2.4',
+  chai: '^2.3.0',
+  sinon: '^1.14.1',
+  'sinon-chai': '^2.7.0',
   mightyiam: '^1.1.6',
   standard: '*',
   'auto-package': '^1.0.0',
