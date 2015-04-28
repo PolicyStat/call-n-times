@@ -5,6 +5,8 @@
 
 ## API
 
+See [here](./index.js).
+
 ## License
 
 Copyright © 2015 PolicyStat LLC
