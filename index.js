@@ -4,6 +4,16 @@
 
 var isInteger = require('validate.io-integer')
 
+/**
+ * Synchronously calls `func` `n` number of times
+ *
+ * @name `call-n-times`
+ * @param {Function} `func` Called `n` times with the index as argument
+ * @param {Number} `n` Times `func` will be called
+ * @returns {Array} Return values of all the `func` calls
+ * @api public
+ */
+
 module.exports = function (func, n, cb) {
   if (arguments.length < 2) {
     throw new Error('Expected exactly 2 arguments')
