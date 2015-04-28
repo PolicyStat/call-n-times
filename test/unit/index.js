@@ -70,6 +70,12 @@ describe('call-n-times', function () {
           spy.should.have.callCount(n)
         })
 
+        it('calls `func` with the index as the only argument', function () {
+          for (var p = 0; p < n; p++) {
+            spy.getCall(p).should.have.been.calledWithExactly(p)
+          }
+        })
+
         it('returns an array of all the return values', function () {
           returns.should.be.an('array')
           returns.length.should.equal(n)

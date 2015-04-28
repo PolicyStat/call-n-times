@@ -24,10 +24,9 @@ module.exports = function (func, n, cb) {
   var returns = []
   var returnVal
 
-  while (n > 0) {
-    returnVal = func()
+  for (var i = 0; i < n; i++) {
+    returnVal = func(i) // passes index to provided `func`
     returns.push(returnVal)
-    n--
   }
 
   return returns
