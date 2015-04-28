@@ -18,6 +18,7 @@ pkg.scripts = {
   ].join(' '),
   test: [
     'npm run lint',
+    'npm run generate-license',
     'npm run unit'
   ].join(' && ')
 }
