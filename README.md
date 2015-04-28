@@ -2,8 +2,6 @@
 
 Calls a provided function a specified number of times, synchronously, and returns an array of the return values.
 
-Can optionally call a provided callback right before returning.
-
 Should work in IE7+. Perhaps even older.
 
 Tests included.
