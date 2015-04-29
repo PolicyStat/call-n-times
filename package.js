@@ -3,7 +3,7 @@ var mightyiam = require('mightyiam')
 var ps = require('policystat')
 
 pkg.name = 'call-n-times'
-pkg.version = '1.1.0'
+pkg.versionFile()
 pkg.description = 'Calls a provided function n times, synchronously'
 pkg.main = 'index.js'
 pkg.scripts = {
